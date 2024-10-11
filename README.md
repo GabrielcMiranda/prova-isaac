@@ -7,7 +7,7 @@ que consiste em um gerencaidor de reservas florestais 🌲
 
 ##funcionalidades 🤖
 
--cadastro de especies e areas 
--listagem de informações 
--localidade com uso de uma api intregada
--exportação de arquvos csv.
+- cadastro de especies e areas 
+- listagem de informações 
+- localidade com uso de uma api intregada
+- exportação de arquvos csv.
