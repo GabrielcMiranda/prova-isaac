@@ -16,7 +16,7 @@ public class Main {
         Scanner s = new Scanner(System.in);
         Api_Geoloc api = new Api_Geoloc();
 
-        int input = 0, contEspecie = 0, contArea = 0, istatus;
+        int input = 0, contEspecie = 0, contArea = 0, istatus,apa;
         double tamanho;
         String entrada1, entrada2;
         boolean status;
@@ -40,11 +40,11 @@ public class Main {
                     entrada2 = s.nextLine();
                     System.out.println("Insira o status de conservação da espécie (1 para ameaçada e 0 para não ameaçada): ");
                     istatus = s.nextInt();
-        
+                      
                     if(istatus == 1){
                         status = true;
                     }
-        
+                   
                     else{
                         status = false;
                     }
