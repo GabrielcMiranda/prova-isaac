@@ -25,7 +25,7 @@ public class AreaCSV {
             FileWriter escritor = new FileWriter(nomeArquivo,StandardCharsets.ISO_8859_1,arquivoExiste);
 
             //escreve os dados no formato apropriado
-            escritor.write("\n"+area.getNome()+";"+area.getLocalizacao()+";"+area.getTamanho());
+            escritor.write("\n"+area.getNome()+";"+area.getTamanho()+";"+area.getLocalizacao()+";"+area.getLogradouro()+";"+area.getComplemento()+";"+area.getBairro()+";"+area.getLocalidade()+";"+area.getUf());
 
             //escreve o que tá no buffer no arquivo imediatamente
             escritor.flush();
@@ -55,7 +55,7 @@ public class AreaCSV {
 
                 //escreve os dados no formato apropriado
                  escritor.write("Log date: "+ dateFormat.format(date));
-                 escritor.write("\nNome;Localização;Tamanho\n");
+                 escritor.write("\nNome;Tamanho;CEP;;Logradouro;Complemento;Bairro;Localidade;Uf\n");
 
                 //escreve o que tá no buffer no arquivo imediatamente
                  escritor.flush();
@@ -68,7 +68,7 @@ public class AreaCSV {
 
                 //escreve os dados no formato apropriado
                  escritor.write("\n\n\nLog date: "+ dateFormat.format(date));
-                 escritor.write("\nNome;Localização;Tamanho\n");
+                 escritor.write("\nNome;Tamanho;CEP;;Logradouro;Complemento;Bairro;Localidade;Uf\n");
 
                 //escreve o que tá no buffer no arquivo imediatamente
                  escritor.flush();
